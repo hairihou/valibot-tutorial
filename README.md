@@ -70,8 +70,8 @@ solutionファイルのテストを実行することで、正しい実装を確
 
 ## License
 
-This project is based on Zod Tutorial by Matt Pocock
-Original project: [Zod Tutorial](https://github.com/total-typescript/zod-tutorial)
+This project is based on Zod Tutorial by Matt Pocock  
+Original project: [Zod Tutorial](https://github.com/total-typescript/zod-tutorial)  
 Licensed under the MIT License
 
 ## Acknowledgements
