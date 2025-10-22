@@ -34,10 +34,6 @@
     "e-13": "vitest run src/13-number-validations.problem.ts",
     "s-13": "vitest run src/13-number-validations.solution.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hairihou/valibot-tutorial.git"
-  },
   "author": "Yusuke Mizuno <hairihou.dev@gmail.com>",
   "license": "MIT",
   "dependencies": {
