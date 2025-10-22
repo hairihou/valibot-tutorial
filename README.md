@@ -1,7 +1,5 @@
 # Valibot Tutorial
 
-[Zod Tutorial](https://github.com/total-typescript/zod-tutorial)をValibotで実施できるようにしたチュートリアルです。
-
 ## セットアップ
 
 ```sh
@@ -69,6 +67,12 @@ solutionファイルのテストを実行することで、正しい実装を確
 11. **enum** - Object Literalを使ったEnum
 12. **variant** - 判別可能なユニオン（discriminated union）
 13. **number-validations** - 数値の高度なバリデーション（decimal, digits, multipleOf）
+
+## License
+
+This project is based on Zod Tutorial by Matt Pocock
+Original project: [Zod Tutorial](https://github.com/total-typescript/zod-tutorial)
+Licensed under the MIT License
 
 ## Acknowledgements
 
