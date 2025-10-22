@@ -1,42 +1,77 @@
 # Valibot Tutorial
 
-This is inspired by [Zod Tutorial](https://github.com/total-typescript/zod-tutorial)
+[Zod Tutorial](https://github.com/total-typescript/zod-tutorial)をValibotで実施できるようにしたチュートリアルです。
+
+## セットアップ
 
 ```sh
-# Installs all dependencies
+# 依存関係のインストール
 npm install
-
-# Asks you which exercise you'd like to run, and runs it
-npm run exercise
 ```
 
-## How to take the course
+## チュートリアルの進め方
 
-You'll notice that the course is split into exercises. Each exercise is split into a `*.problem` and a `*.solution`.
+このコースは13個のエクササイズに分かれています。各エクササイズには`*.problem`ファイルと`*.solution`ファイルがあります。
 
-To take an exercise:
+### エクササイズの取り組み方
 
-1. Run `npm run exercise`
-2. Choose which exercise you'd like to run.
+1. `src/`ディレクトリ内の`*.problem.ts`ファイルを開く
+2. 🕵️‍♂️マークがついているコードを見つける
+3. [Valibotのドキュメント](https://valibot.dev/)を参照して解決方法を探す
+4. コードを修正する
+5. テストを実行して確認する
 
-This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
+このコースは**能動的な学習**を推奨しています。問題を見つけたら、まず自分で解決方法を探してみてください。
 
-1. Check out [Valibot's docs](https://valibot.dev/).
-1. Try to find something that looks relevant.
-1. Give it a go to see if it solves the problem.
+### テストの実行方法
 
-You'll know if you've succeeded because the tests will pass.
+```sh
+# すべてのsolutionファイルをテスト
+npm run test:all
 
-**If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution`. You can see if your solution is better or worse than mine!
+# 特定のエクササイズのproblemファイルをテスト
+npm run e-01  # Exercise 01のproblemをテスト
+
+# 特定のエクササイズのsolutionファイルをテスト（答え合わせ用）
+npm run s-01  # Exercise 01のsolutionをテスト
+
+# 型チェックを実行
+npx tsc
+
+# その他の便利なコマンド
+npm test           # すべてのテストを実行
+npx vitest run     # 上記と同じ
+```
+
+**利用可能なスクリプト：**
+
+- `npm run e-01` 〜 `npm run e-13` - 各エクササイズのproblemファイルをテスト
+- `npm run s-01` 〜 `npm run s-13` - 各エクササイズのsolutionファイルをテスト
+- `npm run test:all` - すべてのsolutionファイルをテスト
+
+テストが成功すれば、正しく実装できています！
+
+**解決できた場合**、または**行き詰まった場合**は、`*.solution`ファイルを確認して、あなたの解決方法と比較してみましょう。
+solutionファイルのテストを実行することで、正しい実装を確認することもできます。
+
+## エクササイズ一覧
+
+1. **number** - 数値のパース
+2. **object** - オブジェクトのパース
+3. **array** - 配列のパース
+4. **infer** - 型推論
+5. **optional** - オプショナルなプロパティ
+6. **default** - デフォルト値
+7. **union** - ユニオン型とpicklist
+8. **validations** - バリデーション（minLength, maxLength, email, url）
+9. **composing-objects** - オブジェクトの合成
+10. **transform** - データの変換
+11. **enum** - Object Literalを使ったEnum
+12. **variant** - 判別可能なユニオン（discriminated union）
+13. **number-validations** - 数値の高度なバリデーション（decimal, digits, multipleOf）
 
 ## Acknowledgements
 
-Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining his [Discord](https://discord.gg/8S5ujhfTB3). Consider signing up to his [Total TypeScript course](https://totaltypescript.com).
-
-## Reference
-
-### `npm run exercise`
-
-Alias: `npm run e`
-
-Open a prompt for choosing which exercise you'd like to run.
+オリジナルのZod Tutorialを作成したMatt Pocockに感謝します。
+[Twitter](https://twitter.com/mattpocockuk)でフォローするか、[Discord](https://discord.gg/8S5ujhfTB3)に参加してください。
+また、[Total TypeScript course](https://totaltypescript.com)への登録もご検討ください。

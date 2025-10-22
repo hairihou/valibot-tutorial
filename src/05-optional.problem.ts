@@ -1,3 +1,15 @@
+/**
+ * Exercise 05: optional - オプショナルなプロパティ
+ *
+ * 問題:
+ * Formスキーマで、phoneNumberを省略可能にしてください。
+ * nameは必須のまま、phoneNumberは渡されても渡されなくてもエラーにならないようにします。
+ *
+ * ヒント:
+ * - v.optional()を使ってプロパティを省略可能にします
+ * - v.optional(v.string())のように使います
+ */
+
 // CODE
 
 import { expect, it } from 'vitest';

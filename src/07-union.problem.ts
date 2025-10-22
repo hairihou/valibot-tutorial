@@ -1,3 +1,15 @@
+/**
+ * Exercise 07: union - ユニオン型とpicklist
+ *
+ * 問題:
+ * privacyLevelプロパティが"private"または"public"のみを受け入れるようにしてください。
+ * それ以外の文字列を渡すとエラーになるようにする必要があります。
+ *
+ * ヒント:
+ * - v.union([v.literal("private"), v.literal("public")])を使う方法
+ * - v.picklist(["private", "public"])を使う方法（よりシンプル）
+ */
+
 // CODE
 
 import { expect, it } from 'vitest';

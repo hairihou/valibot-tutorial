@@ -1,3 +1,15 @@
+/**
+ * Exercise 06: default - デフォルト値
+ *
+ * 問題:
+ * keywordsプロパティが渡されない場合、空の配列[]をデフォルト値として設定してください。
+ * 現在はundefinedになっていますが、常に配列が返されるようにする必要があります。
+ *
+ * ヒント:
+ * - v.optional()の第2引数にデフォルト値を渡すことができます
+ * - v.optional(v.array(v.string()), [])のように使います
+ */
+
 // CODE
 
 import { expect, it } from 'vitest';

@@ -1,3 +1,19 @@
+/**
+ * Exercise 08: validations - バリデーション
+ *
+ * 問題:
+ * 各フィールドに適切なバリデーションを追加してください：
+ * - name: 最低1文字以上
+ * - phoneNumber: 5文字以上20文字以下（省略可能）
+ * - email: メールアドレス形式
+ * - website: URL形式（省略可能）
+ *
+ * ヒント:
+ * - v.pipe()を使ってバリデーションを追加します
+ * - v.pipe(v.string(), v.minLength(5), v.maxLength(20))のように複数のバリデーションを連結できます
+ * - v.email(), v.url()などの便利なバリデーション関数があります
+ */
+
 // CODE
 
 import { expect, it } from 'vitest';

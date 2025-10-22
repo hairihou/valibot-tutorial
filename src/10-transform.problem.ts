@@ -1,3 +1,17 @@
+/**
+ * Exercise 10: transform - データの変換
+ *
+ * 問題:
+ * StarWarsPerson スキーマを拡張して、nameを空白で分割したnameAsArray
+ * プロパティを追加してください。
+ * 例: "Luke Skywalker" → ["Luke", "Skywalker"]
+ *
+ * ヒント:
+ * - v.pipe()とv.transform()を組み合わせて使います
+ * - v.transform()にはコールバック関数を渡し、変換後のオブジェクトを返します
+ * - person.name.split(" ")で名前を配列に変換できます
+ */
+
 // CODE
 
 import { expect, it } from 'vitest';
